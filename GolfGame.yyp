@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":12,},
     {"id":{"name":"obj_proflie","path":"objects/obj_proflie/obj_proflie.yy",},"order":15,},
+    {"id":{"name":"calculate_final_poistion","path":"scripts/calculate_final_poistion/calculate_final_poistion.yy",},"order":0,},
     {"id":{"name":"room_drivingrange","path":"rooms/room_drivingrange/room_drivingrange.yy",},"order":1,},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},"order":10,},
     {"id":{"name":"obj_proshop","path":"objects/obj_proshop/obj_proshop.yy",},"order":13,},
