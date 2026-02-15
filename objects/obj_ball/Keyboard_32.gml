@@ -6,7 +6,7 @@ if at_tee == true {
 	var effeciency = 1.4;
 
 	var initial_ball_velocity = striking_speed * effeciency;
-	var angle = 45;
+	var angle = global.angle_club;
 
 	var acceleration_gravity = -7;
 	var acceleration_air_resistance = -0.5;
@@ -31,5 +31,4 @@ if at_tee == true {
 		
 	progress = 0
 	running = 1
-	at_tee = false
 }

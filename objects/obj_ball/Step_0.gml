@@ -9,6 +9,11 @@ if running == 1 {
 		y = start_y + progress*change_y
 
 		progress += progress_change
+		at_tee = false
+	}
+	else{
+		at_tee = false
+		running = 0
 	}
 }
 
