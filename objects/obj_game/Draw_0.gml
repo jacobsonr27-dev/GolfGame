@@ -10,7 +10,7 @@ draw_text(1700,50,"SPIN")
 draw_text(200,50,percentage1)
 draw_text(1000,50,percentage2)
 draw_text(1800,50,percentage3)
-if step == 3 or step ==1 {
+if global.step == 3 or global.step ==4 {
 	draw_text(2000,50,"SHOT ACCURACY:")
 	draw_text(2200,50,(percentage1+percentage2+percentage3)/3)
 }

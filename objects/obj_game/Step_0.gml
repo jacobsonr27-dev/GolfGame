@@ -1,5 +1,5 @@
 
-if step == 0 {
+if global.step == 0 {
 	growing1 = true
 	growing2 = true
 	growing3 = true
@@ -67,7 +67,7 @@ if percentage3 <= 0 {
 
 
 if (keyboard_check(vk_space)){
-	if step == 1 {
+	if global.step == 1 {
 		if growing1 == true {
 			percentage1 += speed1
 		}
@@ -75,7 +75,7 @@ if (keyboard_check(vk_space)){
 			percentage1 -= speed1
 		}
 	}
-	else if step == 2 {
+	else if global.step == 2 {
 		if growing2 == true {
 			percentage2 += speed2
 		}
@@ -83,7 +83,7 @@ if (keyboard_check(vk_space)){
 			percentage2 -= speed2
 		}
 	}
-	else if step == 3 {
+	else if global.step == 3 {
 		if growing3 == true {
 			percentage3 += speed3
 		}
@@ -97,3 +97,6 @@ if (keyboard_check(vk_space)){
 final_x = start_x + length * dcos(global.angle);
 final_y = start_y + length * dsin(global.angle);
 
+global.speed_percent = percentage1/100
+global.striking_percent = percentage2/100
+global.spin_percent = percentage3/100

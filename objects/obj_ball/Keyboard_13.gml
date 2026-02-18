@@ -1,23 +1,7 @@
-if running == 1 {
-	if progress < 1 {
-		progress_change = 0.01
+/// @description Insert description here
+// You can write your code in this editor
 
-		change_x = final_x - start_x
-		change_y = final_y - start_y
-
-		x = start_x + progress*change_x
-		y = start_y + progress*change_y
-
-		progress += progress_change
-		at_tee = false
-	}
-	else{
-		at_tee = false
-		running = 0
-	}
-}
-
-if global.step==3 {
+if at_tee == true {
 	start_x = x
 	start_y = y
 		
@@ -53,13 +37,5 @@ if global.step==3 {
 	progress = 0
 	running = 1
 }
-
-if global.step==0 {
-	x = 256 
-	y = 800
-	at_tee = true
-	running = 0 
-}
-
 
 

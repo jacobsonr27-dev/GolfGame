@@ -1,4 +1,1 @@
-step = step + 1
-if step > 3 {
-	step = 0
-}
+global.step = global.step + 1
