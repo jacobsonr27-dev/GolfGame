@@ -1,5 +1,8 @@
 if running == 1 {
 	if progress < 1 {
+		var desired_width = -0.8 * abs(progress-0.5) + 0.5
+		image_xscale = desired_width
+		image_yscale = desired_width 
 		progress_change = 0.01
 
 		change_x = final_x - start_x
@@ -29,11 +32,11 @@ if running ==4 {
 	direction = -our_angle 
 	if collision_point(x,y,obj_green,true,true)
 	{
-		speed = max(0,speed-0.02)
+		speed = max(0,speed-0.04)
 	}
 	else if collision_point(x,y,obj_fairway,true,true)
 	{
-		speed = max(0,speed-0.03)
+		speed = max(0,speed-0.06)
 	}
 	if speed <=0.3
 	{
@@ -46,13 +49,13 @@ if global.step==3 {
 	start_x = x
 	start_y = y
 		
-	var striking_speed = global.speed_max*global.speed_percent;
+	var striking_speed = (global.speed_max*0.5)*global.speed_percent+global.speed_max*0.5;
 	var effeciency = .5*global.striking_percent+1;
 
 	var initial_ball_velocity = striking_speed * effeciency;
 	var angle = global.angle_club;
 
-	our_angle = global.angle + 20*(1-global.spin_percent)*choose(-1,1)
+	our_angle = global.angle + 35*(1-global.spin_percent)*choose(-1,1)
 
 
 	var acceleration_gravity = -7;
@@ -84,5 +87,6 @@ if global.step==0 {
 	running = 0 
 }
 
-
+global.xloaction = x
+global.ylocation = y
 
