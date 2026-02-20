@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_proflie",
+  "name": "obj_exitbutton",
   "spriteId": {
-    "name": "spr_profile",
-    "path": "sprites/spr_profile/spr_profile.yy",
+    "name": "spr_exit",
+    "path": "sprites/spr_exit/spr_exit.yy",
   },
   "solid": false,
   "visible": true,

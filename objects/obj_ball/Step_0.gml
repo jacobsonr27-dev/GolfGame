@@ -1,4 +1,9 @@
 if running == 1 {
+	if global.angle_club == 0 {
+		at_tee = false
+		running = 3 
+		progress = 1
+	}
 	if progress < 1 {
 		var desired_width = -0.8 * abs(progress-0.5) + 0.5
 		image_xscale = desired_width
@@ -48,9 +53,24 @@ if running ==4 {
 if global.step==3 {
 	start_x = x
 	start_y = y
-		
 	var striking_speed = (global.speed_max*0.5)*global.speed_percent+global.speed_max*0.5;
-	var effeciency = .5*global.striking_percent+1;
+	if global.current_club_num == 0 {
+		striking_speed = striking_speed * ((0.5*(global.atr_putter/100)+0.5))	
+	}
+	else if global.current_club_num == 1 or global.current_club_num == 2 or global.current_club_num == 3 or global.current_club_num == 4 {
+		striking_speed = striking_speed * ((0.5*(global.atr_wedges/100)+0.5))	
+	} 
+	else if global.current_club_num == 5 or global.current_club_num == 6 or global.current_club_num == 7 or global.current_club_num == 8 or global.current_club_num == 9 or global.current_club_num == 10{
+		striking_speed = striking_speed * ((0.5*(global.atr_irons/100)+0.5))	
+	} 
+	else {
+		striking_speed = striking_speed * ((0.5*(global.atr_driver/100)+0.5))
+	}
+	
+	
+	
+	
+	var effeciency = .5*global.striking_percent*((0.5*(global.atr_striking/100)+0.5))+1;
 
 	var initial_ball_velocity = striking_speed * effeciency;
 	var angle = global.angle_club;

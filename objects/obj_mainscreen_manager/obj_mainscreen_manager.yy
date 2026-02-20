@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_proflie",
-  "spriteId": {
-    "name": "spr_profile",
-    "path": "sprites/spr_profile/spr_profile.yy",
-  },
+  "name": "obj_mainscreen_manager",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,7 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

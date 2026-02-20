@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_proflie",
+  "name": "obj_profile",
   "spriteId": {
-    "name": "spr_profile",
-    "path": "sprites/spr_profile/spr_profile.yy",
+    "name": "spr_rangebutton",
+    "path": "sprites/spr_rangebutton/spr_rangebutton.yy",
   },
   "solid": false,
   "visible": true,

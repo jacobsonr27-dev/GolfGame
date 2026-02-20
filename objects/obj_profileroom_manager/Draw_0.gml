@@ -1,0 +1,6 @@
+draw_text(100,50,"PLAYER INFORMATION")
+draw_text(100,70,"Driver Overall: " + string(global.atr_driver))
+draw_text(100,90,"Irons Overall: " + string(global.atr_irons))
+draw_text(100,110,"Wedges Overall: " + string(global.atr_wedges))
+draw_text(100,130,"Putter Overall: " + string(global.atr_putter))
+draw_text(100,150,"Ball Striking Overall: " + string(global.atr_striking))
