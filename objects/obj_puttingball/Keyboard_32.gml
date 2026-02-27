@@ -1,3 +1,0 @@
-if running == 0 {
-	running = 1
-}

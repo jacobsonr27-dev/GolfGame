@@ -1,4 +1,4 @@
-running = 0
+global.running = 0
 x = 64
 y = 352
 
