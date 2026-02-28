@@ -6,3 +6,4 @@ percentage2 = 0
 global.running = 0
 global.putting_speed = 0
 global.putting_angle = 0
+global.inhole = false
