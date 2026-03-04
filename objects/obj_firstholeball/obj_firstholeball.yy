@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_puttinghole",
+  "name": "obj_firstholeball",
   "spriteId": {
-    "name": "spr_greenhole",
-    "path": "sprites/spr_greenhole/spr_greenhole.yy",
+    "name": "spr_ball",
+    "path": "sprites/spr_ball/spr_ball.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,10 +24,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":82,"eventType":9,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

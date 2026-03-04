@@ -54,13 +54,10 @@ if global.step==3 {
 	start_x = x
 	start_y = y
 	var striking_speed = (global.speed_max*0.5)*global.speed_percent+global.speed_max*0.5;
-	if global.current_club_num == 0 {
-		striking_speed = striking_speed * ((0.5*(global.atr_putter/100)+0.5))	
-	}
-	else if global.current_club_num == 1 or global.current_club_num == 2 or global.current_club_num == 3 or global.current_club_num == 4 {
+	if global.current_club_num == 0 or global.current_club_num == 1 or global.current_club_num == 2 or global.current_club_num == 3 {
 		striking_speed = striking_speed * ((0.5*(global.atr_wedges/100)+0.5))	
 	} 
-	else if global.current_club_num == 5 or global.current_club_num == 6 or global.current_club_num == 7 or global.current_club_num == 8 or global.current_club_num == 9 or global.current_club_num == 10{
+	else if global.current_club_num == 4 or global.current_club_num == 5 or global.current_club_num == 6 or global.current_club_num == 7 or global.current_club_num == 8 or global.current_club_num == 9{
 		striking_speed = striking_speed * ((0.5*(global.atr_irons/100)+0.5))	
 	} 
 	else {

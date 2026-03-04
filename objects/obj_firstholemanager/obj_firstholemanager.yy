@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_puttinghole",
-  "spriteId": {
-    "name": "spr_greenhole",
-    "path": "sprites/spr_greenhole/spr_greenhole.yy",
-  },
+  "name": "obj_firstholemanager",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,8 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":82,"eventType":9,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":27,"eventType":5,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
