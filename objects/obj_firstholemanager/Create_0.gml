@@ -1,6 +1,6 @@
 length = 100;
-start_x = 275;
-start_y = 800;
+start_x = obj_firstholeball.x + 10;
+start_y = obj_firstholeball.y;
 global.angle = 0;
 
 percentage1 = 0;
@@ -15,3 +15,7 @@ speed3 = random_range(2,8)
 global.speed_percent = percentage1/100
 global.striking_percent = percentage2/100
 global.spin_percent = percentage3/100
+
+
+
+

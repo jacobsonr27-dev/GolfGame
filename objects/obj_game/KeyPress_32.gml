@@ -1,1 +1,1 @@
-global.step = global.step + 1
+global.step += 1
