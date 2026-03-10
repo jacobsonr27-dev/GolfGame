@@ -30,6 +30,7 @@ if running == 1 {
 	}
 }
 if running == 3 {
+	global.num_of_strokes += 1
 	speed = x_final_velocity*0.11116666
 	running = 4
 	

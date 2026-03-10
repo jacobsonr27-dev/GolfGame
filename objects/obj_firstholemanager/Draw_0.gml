@@ -3,7 +3,8 @@
 
 draw_line_width_colour(start_x,start_y,final_x,final_y,2,c_blue,c_blue)
 
-draw_text(10,10,global.step)
+draw_text(10,10,global.num_of_strokes)
+
 draw_text(100,50,"SPEED")
 draw_text(900,50,"STRIKING")
 draw_text(1700,50,"SPIN")
