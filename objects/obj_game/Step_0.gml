@@ -67,6 +67,7 @@ if percentage3 <= 0 {
 
 
 if (keyboard_check(vk_space)){
+	show_debug_message(4)
 	if global.step == 1 {
 		if growing1 == true {
 			percentage1 += speed1

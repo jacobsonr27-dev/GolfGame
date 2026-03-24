@@ -6,11 +6,18 @@ if obj_firstholeball.x < 2000 and obj_firstholeball.x > 1750 and obj_firstholeba
 	view_set_visible(0, true);
 	var _camera = camera_create_view(1654, 577, 429, 280);
 	view_set_camera(0, _camera);
+	global.green = true
 }
 else {
 	view_enabled = true;
 	view_set_visible(0, true);
 	var _camera = camera_create_view(0, 0, 2300, 1500);
 	view_set_camera(0, _camera);
+	global.green=false
+}
+
+if global.green == true {
+	draw_healthbar(10,10,100,30,percentage4,c_black,c_green,c_green,0,true,true)
+	draw_healthbar(10,40,100,60,percentage5,c_black,c_green,c_green,0,true,true)
 }
 

@@ -16,6 +16,7 @@ if (keyboard_check(vk_down)) {
 }
 if global.running == 1 {
 	if (keyboard_check(vk_space)) {
+		show_debug_message(2)
 		if growing1 == true{
 			percentage1 = percentage1 + speed1
 		}
@@ -42,6 +43,7 @@ if global.running == 1 {
 }
 if global.running == 2 {
 	if (keyboard_check(vk_space)) {
+		show_debug_message(3)
 		if growing2 == true{
 			percentage2 = percentage2 + speed2
 		}

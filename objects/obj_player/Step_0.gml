@@ -5,3 +5,9 @@ if room == room_firsthole {
 	}
 }
 
+if global.green == true{
+	visible = false
+}
+else{
+	visible = true
+}
