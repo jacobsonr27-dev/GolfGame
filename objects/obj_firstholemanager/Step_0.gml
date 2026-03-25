@@ -1,9 +1,8 @@
 	/// @description Insert description here
 	// You can write your code in this editor
-if global.green == true{
-	global.step = 0
-}
-if global.green == false {
+
+
+if global.green == false{
 	if global.step == 0 {
 		growing1 = true
 		start_x = obj_firstholeball.x + 10;
@@ -74,7 +73,7 @@ if global.green == false {
 
 
 	if (keyboard_check(vk_space)){
-		show_debug_message(1)
+
 		if global.step == 1 {
 			if growing1 == true {
 				percentage1 += speed1
@@ -111,7 +110,7 @@ if global.green == false {
 }
 
 
-if global.green == true {
+else if global.green == true{
 	length = 20
 	if global.puttingstep == 0 {
 		growing1 = true
@@ -131,7 +130,6 @@ if global.green == true {
 	}
 	if global.puttingstep == 1 {
 		if (keyboard_check(vk_space)) {
-			show_debug_message(2)
 			if growing1 == true{
 				percentage4 = percentage4 + speed1
 			}
@@ -158,7 +156,6 @@ if global.green == true {
 	}
 	if global.puttingstep == 2 {
 		if (keyboard_check(vk_space)) {
-			show_debug_message(3)
 			if growing2 == true{
 				percentage5 = percentage5 + speed2
 			}

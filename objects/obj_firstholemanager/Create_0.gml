@@ -21,3 +21,5 @@ global.num_of_strokes = 0
 
 global.puttingstep = 0 
 global.green=false
+
+global.putting_angle = percentage5

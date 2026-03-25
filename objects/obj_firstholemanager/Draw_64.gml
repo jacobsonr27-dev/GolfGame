@@ -6,7 +6,9 @@ if obj_firstholeball.x < 2000 and obj_firstholeball.x > 1750 and obj_firstholeba
 	view_set_visible(0, true);
 	var _camera = camera_create_view(1654, 577, 429, 280);
 	view_set_camera(0, _camera);
-	global.green = true
+	if global.step == 0{
+		global.green = true
+	}
 }
 else {
 	view_enabled = true;

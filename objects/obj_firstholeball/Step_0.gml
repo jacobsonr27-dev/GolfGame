@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
+
 if global.green == false{
 	if running == 1 {
 		if global.angle_club == 0 {
@@ -34,6 +37,7 @@ if global.green == false{
 		global.num_of_strokes += 1
 		speed = x_final_velocity*0.11116666
 		running = 4
+		show_debug_message(x_final_velocity)
 	
 	}
 
@@ -114,14 +118,11 @@ if global.green == false{
 	global.xloaction = x
 	global.ylocation = y
 }
-
-
-
-if global.green == true{
+else if global.green == true and speed == 0{
 	our_angle = global.angle + 35*(1-global.putting_angle/100)*choose(-1,1)+random_range(-1,1)*20*(1-global.atr_putter/100)
-
+	show_debug_message("hello")
 	if global.puttingstep == 0 or global.puttingstep == 1 or global.puttingstep == 2{
-			speed = 0
+
 	}
 
 
@@ -130,7 +131,6 @@ if global.green == true{
 		speed = global.putting_speed * 6.667 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100)
 		direction = -our_angle
 		global.puttingstep = 4
-		show_debug_message(1-global.putting_angle)
 	}
 
 	if global.puttingstep ==4 {
