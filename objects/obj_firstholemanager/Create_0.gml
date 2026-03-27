@@ -13,6 +13,11 @@ global.step = 0
 speed1 = random_range(2,8)
 speed2 = random_range(2,8)
 speed3 = random_range(2,8)
+speed4 = random_range(2,8)
+speed5 = random_range(2,8)
+
+growing4 = true
+growing5 = true
 
 global.speed_percent = percentage1/100
 global.striking_percent = percentage2/100

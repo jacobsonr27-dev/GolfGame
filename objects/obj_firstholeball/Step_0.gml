@@ -118,24 +118,24 @@ if global.green == false{
 	global.xloaction = x
 	global.ylocation = y
 }
-else if global.green == true and speed == 0{
-	our_angle = global.angle + 35*(1-global.putting_angle/100)*choose(-1,1)+random_range(-1,1)*20*(1-global.atr_putter/100)
-	show_debug_message("hello")
-	if global.puttingstep == 0 or global.puttingstep == 1 or global.puttingstep == 2{
+else if global.green == true{
+	our_angle = global.angle + 35*(1-global.putting_angle/100)*choose(-1,1)+random_range(-1,1)*20*(0)
 
+	if global.puttingstep == 0 or global.puttingstep == 1 or global.puttingstep == 2{
+		speed = 0
 	}
 
 
 
 	if global.puttingstep == 3 {
-		speed = global.putting_speed * 6.667 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100)
+		speed = (global.putting_speed * 6.667 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
 		direction = -our_angle
 		global.puttingstep = 4
 	}
-
-	if global.puttingstep ==4 {
+	if speed > 0{
 		speed = max(0,speed-0.07)
 	}
+	
 
 
 	if position_meeting(x,y,obj_puttinghole){

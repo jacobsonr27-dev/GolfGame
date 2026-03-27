@@ -1,5 +1,5 @@
 
-global.step = global.step + 0.5
+global.step = global.step + 1
 
 
 

@@ -112,11 +112,12 @@ if global.green == false{
 
 else if global.green == true{
 	length = 20
+	
 	if global.puttingstep == 0 {
-		growing1 = true
-		speed1 = random_range(2,7)
-		growing2 = true
-		speed2 = random_range(2,7)
+		growing4 = true
+		speed4 = random_range(2,7)
+		growing5 = true
+		speed5 = random_range(2,7)
 		global.puttingstep = 1
 	}
 
@@ -130,53 +131,53 @@ else if global.green == true{
 	}
 	if global.puttingstep == 1 {
 		if (keyboard_check(vk_space)) {
-			if growing1 == true{
-				percentage4 = percentage4 + speed1
+			if growing4 == true{
+				percentage4 = percentage4 + speed4
 			}
-			else if growing1 == false {
-				percentage4 = percentage4 - speed1
+			else if growing4 == false {
+				percentage4 = percentage4 - speed4
 			}
 		}
 
 		if percentage4 >= 100 {
 			percentage4 = 100
-			growing1 = false
+			growing4 = false
 		}
 		if percentage4 <= 0{
 			percentage4 = 0
-			if growing1 == false{
-				growing1 = false
+			if growing4 == false{
+				growing4 = false
 			}
 			else
 			{
-				growing1 = true
+				growing4 = true
 			}
 		global.putting_speed = percentage4/100 * 2 + 0.5
 		}
 	}
 	if global.puttingstep == 2 {
 		if (keyboard_check(vk_space)) {
-			if growing2 == true{
-				percentage5 = percentage5 + speed2
+			if growing5 == true{
+				percentage5 = percentage5 + speed5
 			}
-			else if growing2 == false {
-				percentage5 = percentage5 - speed2
+			else if growing5 == false {
+				percentage5 = percentage5 - speed5
 			}
 
 		}
 
 		if percentage5 >= 100 {
 			percentage5 = 100
-			growing2 = false
+			growing5 = false
 		}
 		if percentage5 <= 0{
 			percentage5 = 0
-			if growing2 == false{
-				growing2 = false
+			if growing5 == false{
+				growing5 = false
 			}
 			else
 			{
-				growing2 = true
+				growing5 = true
 			}
 		global.putting_speed = percentage4/100 *1.6 + 0.5
 	

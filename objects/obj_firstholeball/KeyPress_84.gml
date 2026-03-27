@@ -4,3 +4,4 @@ y=771
 
 global.num_of_strokes = 0
 
+global.green = false

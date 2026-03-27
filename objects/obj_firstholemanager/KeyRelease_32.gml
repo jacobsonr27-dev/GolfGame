@@ -13,3 +13,4 @@ if global.green == true {
 		global.puttingstep = 3
 	}
 }
+show_debug_message(global.puttingstep)

@@ -12,3 +12,4 @@ show_debug_message(global.putting_angle)
 if global.inhole == true{
 	draw_text(100,50,"Nice Shot!!!")
 }
+draw_text(100,50,global.running)
