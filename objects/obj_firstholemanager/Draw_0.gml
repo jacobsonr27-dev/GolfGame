@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if global.green == false {
-	draw_line_width_colour(start_x,start_y,final_x,final_y,2,c_blue,c_blue)
+
 	draw_text(10,10,global.num_of_strokes)
 	draw_text(100,50,"SPEED")
 	draw_text(900,50,"STRIKING")
@@ -18,7 +18,17 @@ if global.green == false {
 	draw_healthbar(900,100,1400,200,percentage2,c_black,c_green,c_green,0,true,true)
 	draw_healthbar(1700,100,2200,200,percentage3,c_black,c_green,c_green,0,true,true)
 }
-else {
-	draw_line_width_colour(obj_firstholeball.x,obj_firstholeball.y,final_x,final_y,2,c_blue,c_blue)
+
+
+if global.green == false {
+	final_x = obj_firstholeball.x + 50 * dcos(global.angle);
+	final_y = obj_firstholeball.y + 50 * dsin(global.angle);
 }
+else {
+	final_x = obj_firstholeball.x + 20 * dcos(global.angle);
+	final_y = obj_firstholeball.y + 20 * dsin(global.angle);
+}
+
+draw_line_width_colour(obj_firstholeball.x,obj_firstholeball.y,final_x,final_y,2,c_blue,c_blue)
+
 

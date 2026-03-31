@@ -32,6 +32,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":8,},
     {"id":{"name":"obj_hole","path":"objects/obj_hole/obj_hole.yy",},"order":11,},
+    {"id":{"name":"room_secondhole","path":"rooms/room_secondhole/room_secondhole.yy",},"order":5,},
     {"id":{"name":"obj_sand","path":"objects/obj_sand/obj_sand.yy",},"order":5,},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},"order":16,},
     {"id":{"name":"spr_profile","path":"sprites/spr_profile/spr_profile.yy",},"order":15,},
@@ -81,6 +82,7 @@
     {"roomId":{"name":"room_drivingrange","path":"rooms/room_drivingrange/room_drivingrange.yy",},},
     {"roomId":{"name":"room_profilescreen","path":"rooms/room_profilescreen/room_profilescreen.yy",},},
     {"roomId":{"name":"room_practicegreen","path":"rooms/room_practicegreen/room_practicegreen.yy",},},
+    {"roomId":{"name":"room_secondhole","path":"rooms/room_secondhole/room_secondhole.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

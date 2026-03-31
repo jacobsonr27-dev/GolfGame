@@ -8,10 +8,10 @@ if global.green == false{
 		if global.angle_club == 0 {
 			at_tee = false
 			running = 3 
-			progress = 1
+			global.progress = 1
 		}
-		if progress < 1 {
-			var desired_width = -0.8 * abs(progress-0.5) + 0.5
+		if global.progress < 1 {
+			var desired_width = -0.8 * abs(global.progress-0.5) + 0.5
 			image_xscale = desired_width
 			image_yscale = desired_width 
 			progress_change = 0.01
@@ -19,10 +19,10 @@ if global.green == false{
 			change_x = final_x - start_x
 			change_y = final_y - start_y
 
-			x = start_x + progress*change_x
-			y = start_y + progress*change_y
+			x = start_x + global.progress*change_x
+			y = start_y + global.progress*change_y
 
-			progress += progress_change
+			global.progress += progress_change
 			at_tee = false
 		}
 		else{
@@ -109,7 +109,7 @@ if global.green == false{
 		final_x = total_distance_pixels * dcos(our_angle) + start_x
 		final_y = total_distance_pixels * dsin(our_angle) + start_y
 		
-		progress = 0
+		global.progress = 0
 		running = 1
 	}
 
@@ -119,7 +119,7 @@ if global.green == false{
 	global.ylocation = y
 }
 else if global.green == true{
-	our_angle = global.angle + 35*(1-global.putting_angle/100)*choose(-1,1)+random_range(-1,1)*20*(0)
+	our_angle = global.angle + 35*(1-global.puttingaccuracy/100)*choose(-1,1)+random_range(-1,1)*20*(1-global.atr_putter/100)
 
 	if global.puttingstep == 0 or global.puttingstep == 1 or global.puttingstep == 2{
 		speed = 0

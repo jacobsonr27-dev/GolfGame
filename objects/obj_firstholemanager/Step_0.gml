@@ -5,8 +5,6 @@
 if global.green == false{
 	if global.step == 0 {
 		growing1 = true
-		start_x = obj_firstholeball.x + 10;
-		start_y = obj_firstholeball.y;
 		growing2 = true
 		growing3 = true
 		percentage1 = 0
@@ -101,8 +99,7 @@ if global.green == false{
 	}
 
 
-	final_x = start_x + length * dcos(global.angle);
-	final_y = start_y + length * dsin(global.angle);
+	
 
 	global.speed_percent = percentage1/100
 	global.striking_percent = percentage2/100
@@ -111,7 +108,6 @@ if global.green == false{
 
 
 else if global.green == true{
-	length = 20
 	
 	if global.puttingstep == 0 {
 		growing4 = true
@@ -185,9 +181,7 @@ else if global.green == true{
 
 		}
 	}
-
-	final_x = obj_firstholeball.x + length * dcos(global.angle);
-	final_y = obj_firstholeball.y + length * dsin(global.angle);
+	global.puttingaccuracy = percentage5
 
 }
 
