@@ -16,11 +16,11 @@ if global.green == false{
 	}
 
 	if (keyboard_check(vk_up)) {
-		global.angle -= 0.25
+		global.angle -= 0.6
 	}
 
 	if (keyboard_check(vk_down)) {
-		global.angle += 0.25
+		global.angle += 0.6
 	}
 
 	if percentage1 >= 100 {

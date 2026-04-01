@@ -37,6 +37,7 @@
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},"order":16,},
     {"id":{"name":"spr_profile","path":"sprites/spr_profile/spr_profile.yy",},"order":15,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":15,},
+    {"id":{"name":"room_thirdhole","path":"rooms/room_thirdhole/room_thirdhole.yy",},"order":6,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":16,},
     {"id":{"name":"obj_drivingrange","path":"objects/obj_drivingrange/obj_drivingrange.yy",},"order":14,},
     {"id":{"name":"obj_firstholeball","path":"objects/obj_firstholeball/obj_firstholeball.yy",},"order":28,},
@@ -83,6 +84,7 @@
     {"roomId":{"name":"room_profilescreen","path":"rooms/room_profilescreen/room_profilescreen.yy",},},
     {"roomId":{"name":"room_practicegreen","path":"rooms/room_practicegreen/room_practicegreen.yy",},},
     {"roomId":{"name":"room_secondhole","path":"rooms/room_secondhole/room_secondhole.yy",},},
+    {"roomId":{"name":"room_thirdhole","path":"rooms/room_thirdhole/room_thirdhole.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

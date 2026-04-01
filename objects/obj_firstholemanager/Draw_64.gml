@@ -21,8 +21,9 @@ if room == room_firsthole{
 	}
 }
 if room == room_secondhole{
-	if obj_firstholeball.x < 1505 and obj_firstholeball.x > 1885 and obj_firstholeball.y > 285 and obj_firstholeball.y < 665 {
+	if obj_firstholeball.x > 1505 and obj_firstholeball.x < 1885 and obj_firstholeball.y > 285 and obj_firstholeball.y < 665 {
 		view_enabled = true;
+		show_debug_message("on green")
 		view_set_visible(0, true);
 		var _camera = camera_create_view(1339, 272, 634, 414);
 		view_set_camera(0, _camera);

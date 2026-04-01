@@ -10,6 +10,14 @@ if obj_firstholeball.speed == 0 {
 			global.num_of_strokes = 0
 			global.green = false
 		}
+		else if room == room_secondhole {
+			room_goto(room_thirdhole)
+			global.step = 0
+			x = 64
+			y=704
+			global.num_of_strokes = 0
+			global.green = false
+		}
 		else {
 			room_goto(room_openingscreen)
 		}

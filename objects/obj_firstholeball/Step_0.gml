@@ -128,7 +128,7 @@ else if global.green == true{
 
 
 	if global.puttingstep == 3 {
-		speed = (global.putting_speed * 6.667 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
+		speed = (global.putting_speed * 9 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
 		direction = -our_angle
 		global.puttingstep = 4
 	}
