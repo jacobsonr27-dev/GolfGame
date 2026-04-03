@@ -41,6 +41,27 @@ if room == room_secondhole{
 		}
 	}
 }
+if room == room_thirdhole{
+	if obj_firstholeball.x > 1890 and obj_firstholeball.x < 2200 and obj_firstholeball.y > 290 and obj_firstholeball.y < 510 {
+		view_enabled = true;
+		show_debug_message("on green")
+		view_set_visible(0, true);
+		var _camera = camera_create_view(1826, 258, 380, 248);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 2300, 1500);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
 
 
 if global.green == true {

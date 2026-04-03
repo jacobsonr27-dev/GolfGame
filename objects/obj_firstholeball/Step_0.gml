@@ -2,6 +2,18 @@
 // You can write your code in this editor
 
 
+if global.step == 0 {
+	previous_x = x
+	previous_y = y
+}
+
+if collision_point(x,y,obj_water,true,true) and speed != 0
+		{
+			speed = 0
+			x = previous_x
+			y= previous_y
+			
+		}
 
 if global.green == false{
 	if running == 1 {
