@@ -46,7 +46,7 @@ if room == room_thirdhole{
 		view_enabled = true;
 		show_debug_message("on green")
 		view_set_visible(0, true);
-		var _camera = camera_create_view(1826, 258, 380, 248);
+		var _camera = camera_create_view(1881, 284, 380, 248);
 		view_set_camera(0, _camera);
 		if global.step == 0{
 			global.green = true

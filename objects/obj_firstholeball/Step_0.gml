@@ -65,11 +65,11 @@ if global.green == false{
 		}
 		else if collision_point(x,y,obj_rough,true,true)
 		{
-			speed = max(0,speed-0.09)
+			speed = max(0,speed-0.2)
 		}
 		else if collision_point(x,y,obj_sand,true,true)
 		{
-			speed = max(0,speed-0.11)
+			speed = max(0,speed-0.4)
 		}
 		if speed <=0.3
 		{
@@ -143,6 +143,7 @@ else if global.green == true{
 		speed = (global.putting_speed * 9 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
 		direction = -our_angle
 		global.puttingstep = 4
+		global.num_of_strokes += 1
 	}
 	if speed > 0{
 		speed = max(0,speed-0.07)
