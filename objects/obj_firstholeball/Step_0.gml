@@ -12,6 +12,7 @@ if collision_point(x,y,obj_water,true,true) and speed != 0
 			speed = 0
 			x = previous_x
 			y= previous_y
+			global.num_of_strokes += 1
 			
 		}
 
@@ -140,7 +141,7 @@ else if global.green == true{
 
 
 	if global.puttingstep == 3 {
-		speed = (global.putting_speed * 9 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
+		speed = (global.putting_speed * 7 + random_range(-1,1)*global.putting_speed*0.7*(1-global.atr_putter/100))/3
 		direction = -our_angle
 		global.puttingstep = 4
 		global.num_of_strokes += 1
