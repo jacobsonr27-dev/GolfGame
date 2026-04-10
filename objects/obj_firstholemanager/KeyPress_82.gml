@@ -6,3 +6,4 @@ if obj_firstholeball.speed == 0 {
 		percentage5 = 0
 	}
 }
+global.current_club_num=0

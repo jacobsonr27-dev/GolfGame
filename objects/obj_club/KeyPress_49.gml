@@ -1,5 +1,24 @@
 
+if room != room_drivingrange{
+	if position_meeting(obj_firstholeball.x,obj_firstholeball.y,obj_sand){
+		list_of_clubs = ["Lob Wedge","Sand Wedge","Gap Wedge","P Wedge","9 Iron","8 Iron", "7 Iron","6 Iron","5 Iron","4 Iron"]
+	}
+	else if position_meeting(obj_firstholeball.x,obj_firstholeball.y,obj_fairway){
+		if global.num_of_strokes == 0 {
+			list_of_clubs = ["Lob Wedge","Sand Wedge","Gap Wedge","P Wedge","9 Iron","8 Iron", "7 Iron","6 Iron","5 Iron","4 Iron","5 Wood","3 Wood","Driver"]
+		}
+		else{
+			list_of_clubs = ["Lob Wedge","Sand Wedge","Gap Wedge","P Wedge","9 Iron","8 Iron", "7 Iron","6 Iron","5 Iron","4 Iron","5 Wood","3 Wood"]
+		}
+	}
 
+	else if position_meeting(obj_firstholeball.x,obj_firstholeball.y,obj_rough){
+		list_of_clubs = ["Lob Wedge","Sand Wedge","Gap Wedge","P Wedge","9 Iron","8 Iron", "7 Iron","6 Iron","5 Iron","4 Iron","5 Wood"]
+	}
+	else{
+		list_of_clubs = ["Lob Wedge","Sand Wedge","Gap Wedge","P Wedge","9 Iron","8 Iron", "7 Iron","6 Iron","5 Iron","4 Iron","5 Wood","3 Wood","Driver"]
+	}
+}
 global.current_club_num += 1
 if global.current_club_num > array_length(list_of_clubs)-1
 {

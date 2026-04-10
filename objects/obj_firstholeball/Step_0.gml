@@ -82,7 +82,19 @@ if global.green == false{
 	if global.step==3 {
 		start_x = x
 		start_y = y
-		var striking_speed = (global.speed_max*0.5)*global.speed_percent+global.speed_max*0.5;
+		if position_meeting(x,y,obj_sand){
+			liepenalty = 0.7
+		}
+		else if position_meeting(x,y,obj_fairway){
+			liepenalty = 1
+		}
+		else if position_meeting(x,y,obj_rough){
+			liepenalty = 0.85
+		}
+		else{
+			liepenalty = 1
+		}
+		var striking_speed = ((global.speed_max*0.5)*global.speed_percent+global.speed_max*0.5)*liepenalty;
 		if global.current_club_num == 0 or global.current_club_num == 1 or global.current_club_num == 2 or global.current_club_num == 3 {
 			striking_speed = striking_speed * ((0.5*(global.atr_wedges/100)+0.5))	
 		} 
