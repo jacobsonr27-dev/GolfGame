@@ -44,6 +44,7 @@
     {"id":{"name":"room_thirdhole","path":"rooms/room_thirdhole/room_thirdhole.yy",},"order":6,},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"order":16,},
     {"id":{"name":"obj_drivingrange","path":"objects/obj_drivingrange/obj_drivingrange.yy",},"order":14,},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},"order":0,},
     {"id":{"name":"obj_firstholeball","path":"objects/obj_firstholeball/obj_firstholeball.yy",},"order":28,},
     {"id":{"name":"spr_fairway","path":"sprites/spr_fairway/spr_fairway.yy",},"order":2,},
     {"id":{"name":"spr_greenbutton","path":"sprites/spr_greenbutton/spr_greenbutton.yy",},"order":17,},
