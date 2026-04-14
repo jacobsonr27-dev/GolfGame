@@ -108,7 +108,13 @@ if global.green == false{
 
 
 else if global.green == true{
-	
+	if (keyboard_check(vk_up)) {
+		global.angle -= 0.6
+	}
+
+	if (keyboard_check(vk_down)) {
+		global.angle += 0.6
+	}
 	if global.puttingstep == 0 {
 		growing4 = true
 		speed4 = random_range(2,7)
