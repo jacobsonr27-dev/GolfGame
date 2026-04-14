@@ -1,0 +1,1 @@
+global.bestscore = 30
