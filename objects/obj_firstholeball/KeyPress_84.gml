@@ -1,5 +1,5 @@
 
-if place_meeting(x,y,obj_puttinghole){	
+if global.inhole == true{	
 	if obj_firstholeball.speed == 0 {
 		if room == room_firsthole {
 			global.firstholestrokes = global.num_of_strokes

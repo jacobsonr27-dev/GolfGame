@@ -18,6 +18,7 @@
     {"id":{"name":"spr_sand","path":"sprites/spr_sand/spr_sand.yy",},"order":4,},
     {"id":{"name":"obj_rangebutton","path":"objects/obj_rangebutton/obj_rangebutton.yy",},"order":17,},
     {"id":{"name":"obj_practicegreenbutton","path":"objects/obj_practicegreenbutton/obj_practicegreenbutton.yy",},"order":22,},
+    {"id":{"name":"obj_slopeup","path":"objects/obj_slopeup/obj_slopeup.yy",},"order":32,},
     {"id":{"name":"spr_proshop","path":"sprites/spr_proshop/spr_proshop.yy",},"order":10,},
     {"id":{"name":"obj_puttinghole","path":"objects/obj_puttinghole/obj_puttinghole.yy",},"order":25,},
     {"id":{"name":"obj_club","path":"objects/obj_club/obj_club.yy",},"order":9,},

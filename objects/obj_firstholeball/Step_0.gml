@@ -177,6 +177,12 @@ else if global.green == true{
 			y=obj_puttinghole.y
 		}
 	}
+	if x==obj_puttinghole.x and y=obj_puttinghole.y{
+		global.inhole = true
+	}
+	else{
+		global.inhole = false
+	}
 }
 
 
