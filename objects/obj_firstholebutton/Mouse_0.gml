@@ -1,4 +1,4 @@
-room_goto(room_firsthole)
+room_goto(room_Hole1)
 
 
 

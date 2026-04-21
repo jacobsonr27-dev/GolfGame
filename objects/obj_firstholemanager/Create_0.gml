@@ -28,3 +28,5 @@ global.puttingstep = 0
 global.green=false
 
 global.putting_angle = percentage5
+ 
+window_set_fullscreen(true)
