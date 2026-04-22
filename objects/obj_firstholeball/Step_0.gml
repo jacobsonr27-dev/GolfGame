@@ -5,6 +5,7 @@
 if global.step == 0 {
 	previous_x = x
 	previous_y = y
+	global.availablespeed = 5
 }
 
 if collision_point(x,y,obj_water,true,true) and speed != 0
@@ -25,18 +26,25 @@ if global.green == false{
 		}
 		if global.progress < 1 {
 			var desired_width = -0.8 * abs(global.progress-0.5) + 0.5
+			
 			image_xscale = desired_width
 			image_yscale = desired_width 
 			progress_change = 0.01
-
+			
 			change_x = final_x - start_x
 			change_y = final_y - start_y
-
-			x = start_x + global.progress*change_x
-			y = start_y + global.progress*change_y
+			if place_meeting(x,y,obj_tree) == true and desired_width < 0.42 and desired_width > 0.26{
+				x = x + progress_change*change_x*0.2
+				y = y + progress_change*change_y*0.2
+			}
+			else{
+				x = start_x + change_x*global.progress
+				y = start_y + change_y*global.progress
+			}
 
 			global.progress += progress_change
 			at_tee = false
+			
 		}
 		else{
 			at_tee = false
@@ -177,15 +185,13 @@ else if global.green == true{
 			y=obj_puttinghole.y
 		}
 	}
-	if x==obj_puttinghole.x and y=obj_puttinghole.y{
+	if x==obj_puttinghole.x and y==obj_puttinghole.y{
 		global.inhole = true
 	}
 	else{
 		global.inhole = false
 	}
 }
-
-
 
 
 
