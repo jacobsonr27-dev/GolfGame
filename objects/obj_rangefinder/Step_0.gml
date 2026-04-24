@@ -1,0 +1,1 @@
+distance = sqrt(sqr(obj_puttinghole.x-obj_firstholeball.x) + sqr(obj_puttinghole.y-obj_firstholeball.y))/5.7

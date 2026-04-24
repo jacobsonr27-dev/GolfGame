@@ -35,6 +35,7 @@
     {"id":{"name":"obj_profileroom_manager","path":"objects/obj_profileroom_manager/obj_profileroom_manager.yy",},"order":20,},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"order":33,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"obj_rangefinder","path":"objects/obj_rangefinder/obj_rangefinder.yy",},"order":34,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":8,},
     {"id":{"name":"obj_hole","path":"objects/obj_hole/obj_hole.yy",},"order":11,},
@@ -59,6 +60,7 @@
     {"id":{"name":"obj_fairway","path":"objects/obj_fairway/obj_fairway.yy",},"order":3,},
     {"id":{"name":"obj_distance","path":"objects/obj_distance/obj_distance.yy",},"order":7,},
     {"id":{"name":"spr_hole","path":"sprites/spr_hole/spr_hole.yy",},"order":9,},
+    {"id":{"name":"room_Hole2","path":"rooms/room_Hole2/room_Hole2.yy",},"order":9,},
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},"order":21,},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":22,},
     {"id":{"name":"obj_rough","path":"objects/obj_rough/obj_rough.yy",},"order":4,},
@@ -98,6 +100,7 @@
     {"roomId":{"name":"room_secondhole","path":"rooms/room_secondhole/room_secondhole.yy",},},
     {"roomId":{"name":"room_thirdhole","path":"rooms/room_thirdhole/room_thirdhole.yy",},},
     {"roomId":{"name":"room_scorecard","path":"rooms/room_scorecard/room_scorecard.yy",},},
+    {"roomId":{"name":"room_Hole2","path":"rooms/room_Hole2/room_Hole2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

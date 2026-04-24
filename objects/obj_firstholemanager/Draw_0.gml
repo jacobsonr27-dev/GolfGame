@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+draw_set_color(c_white)
 if global.green == false {
 
 	draw_text_transformed(10,10,global.num_of_strokes,3,3,0)

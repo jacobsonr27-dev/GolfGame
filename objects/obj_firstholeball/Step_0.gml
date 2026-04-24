@@ -5,7 +5,6 @@
 if global.step == 0 {
 	previous_x = x
 	previous_y = y
-	global.availablespeed = 5
 }
 
 if collision_point(x,y,obj_water,true,true) and speed != 0
@@ -30,16 +29,17 @@ if global.green == false{
 			image_xscale = desired_width
 			image_yscale = desired_width 
 			progress_change = 0.01
-			
-			change_x = final_x - start_x
-			change_y = final_y - start_y
 			if place_meeting(x,y,obj_tree) == true and desired_width < 0.42 and desired_width > 0.26{
-				x = x + progress_change*change_x*0.2
-				y = y + progress_change*change_y*0.2
+				global.touchedtree = true
+			}
+
+			if global.touchedtree == true{
+				x = x + progress_change*change_x*0.4
+				y = y + progress_change*change_y*0.4
 			}
 			else{
-				x = start_x + change_x*global.progress
-				y = start_y + change_y*global.progress
+				x = x + progress_change*change_x
+				y = y + progress_change*change_y
 			}
 
 			global.progress += progress_change
@@ -87,9 +87,10 @@ if global.green == false{
 		}
 	}
 
-	if global.step==3 {
+	if global.step==4 {
 		start_x = x
 		start_y = y
+		global.touchedtree = false
 		if position_meeting(x,y,obj_sand){
 			liepenalty = 0.7
 		}
@@ -121,7 +122,7 @@ if global.green == false{
 		var initial_ball_velocity = striking_speed * effeciency;
 		var angle = global.angle_club;
 
-		our_angle = global.angle + 35*(1-global.spin_percent)*choose(-1,1)
+		our_angle = global.angle + 60*(1-global.spin_percent)*choose(-1,1)
 
 
 		var acceleration_gravity = -7;
@@ -143,6 +144,9 @@ if global.green == false{
 		final_y = total_distance_pixels * dsin(our_angle) + start_y
 		
 		global.progress = 0
+		change_x = final_x - start_x
+		change_y = final_y - start_y
+		global.step = 5
 		running = 1
 	}
 
@@ -152,7 +156,7 @@ if global.green == false{
 	global.ylocation = y
 }
 else if global.green == true{
-	our_angle = global.angle + 35*(1-global.puttingaccuracy/100)*choose(-1,1)+random_range(-1,1)*20*(1-global.atr_putter/100)
+	our_angle = global.angle + 60*(1-global.puttingaccuracy/100)*choose(-1,1)+random_range(-1,1)*20*(1-global.atr_putter/100)
 
 	if global.puttingstep == 0 or global.puttingstep == 1 or global.puttingstep == 2{
 		speed = 0
