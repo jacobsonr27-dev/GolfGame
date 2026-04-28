@@ -8,6 +8,8 @@ if global.step == 5 {
 		}
 	}
 	global.current_club_num=0
+	global.angle_club = 60
+	global.speed_max = 21
 }
 else if global.green == true and global.puttingstep == 4{
 	if obj_firstholeball.speed == 0 {

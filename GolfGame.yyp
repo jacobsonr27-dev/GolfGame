@@ -52,6 +52,7 @@
     {"id":{"name":"spr_fairway","path":"sprites/spr_fairway/spr_fairway.yy",},"order":2,},
     {"id":{"name":"spr_greenbutton","path":"sprites/spr_greenbutton/spr_greenbutton.yy",},"order":17,},
     {"id":{"name":"obj_practicegreenroom_manager","path":"objects/obj_practicegreenroom_manager/obj_practicegreenroom_manager.yy",},"order":23,},
+    {"id":{"name":"room_Hole3","path":"rooms/room_Hole3/room_Hole3.yy",},"order":10,},
     {"id":{"name":"obj_scorecardmanager","path":"objects/obj_scorecardmanager/obj_scorecardmanager.yy",},"order":30,},
     {"id":{"name":"obj_profile","path":"objects/obj_profile/obj_profile.yy",},"order":19,},
     {"id":{"name":"spr_club","path":"sprites/spr_club/spr_club.yy",},"order":7,},
@@ -101,6 +102,7 @@
     {"roomId":{"name":"room_thirdhole","path":"rooms/room_thirdhole/room_thirdhole.yy",},},
     {"roomId":{"name":"room_scorecard","path":"rooms/room_scorecard/room_scorecard.yy",},},
     {"roomId":{"name":"room_Hole2","path":"rooms/room_Hole2/room_Hole2.yy",},},
+    {"roomId":{"name":"room_Hole3","path":"rooms/room_Hole3/room_Hole3.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
