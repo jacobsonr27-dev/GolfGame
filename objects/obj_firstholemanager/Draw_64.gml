@@ -60,6 +60,46 @@ if room == room_Hole2{
 		}
 	}
 }
+if room == room_Hole3{
+	if obj_firstholeball.x > 2015 and obj_firstholeball.x < 2140  and obj_firstholeball.y > 900 and obj_firstholeball.y < 1090 or obj_firstholeball.x > 2050 and obj_firstholeball.x < 2110  and obj_firstholeball.y > 865 and obj_firstholeball.y < 900 or obj_firstholeball.x > 2050  and obj_firstholeball.x < 2210  and obj_firstholeball.y > 960 and obj_firstholeball.y < 1120 or obj_firstholeball.x > 2210 and obj_firstholeball.x < 2240  and obj_firstholeball.y > 990  and obj_firstholeball.y < 1090 {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(1950, 855, 438, 270);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 2500, 1538);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
+if room == room_Hole4{
+	if obj_firstholeball.x > 1410 and obj_firstholeball.x < 1440  and obj_firstholeball.y > 480 and obj_firstholeball.y < 545 or obj_firstholeball.x > 1440 and obj_firstholeball.x < 1630  and obj_firstholeball.y > 480 and obj_firstholeball.y < 580 or obj_firstholeball.x > 1475  and obj_firstholeball.x < 1600  and obj_firstholeball.y > 450 and obj_firstholeball.y < 575 or obj_firstholeball.x > 1500 and obj_firstholeball.x < 1630  and obj_firstholeball.y > 510  and obj_firstholeball.y < 670 or obj_firstholeball.x > 1535 and obj_firstholeball.x < 1600  and obj_firstholeball.y > 675  and obj_firstholeball.y < 705{
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(1275, 443, 431, 265);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 1714,1054);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
 if room == room_secondhole{
 	if obj_firstholeball.x > 1538 and obj_firstholeball.x < 1845 and obj_firstholeball.y > 552 and obj_firstholeball.y < 858 {
 		view_enabled = true;
@@ -107,4 +147,15 @@ if room == room_thirdhole{
 if global.green == true {
 	draw_healthbar(10,10,200,50,percentage4,c_black,c_green,c_green,0,true,true)
 	draw_healthbar(10,60,200,100,percentage5,c_black,c_green,c_green,0,true,true)
+}
+if global.green == false {
+
+	draw_text_transformed(10/2,10/2,global.num_of_strokes,2,2,0)
+	draw_text_transformed(100/2,40/2,"SPEED",2,2,0)
+	draw_text_transformed(900/2,40/2,"STRIKING",2,2,0)
+	draw_text_transformed(1700/2,40/2,"SPIN",2,2,0)
+
+	draw_healthbar(100/2,100/2,600/2,200/2,percentage1,c_black,c_green,c_green,0,true,true)
+	draw_healthbar(900/2,100/2,1400/2,200/2,percentage2,c_black,c_green,c_green,0,true,true)
+	draw_healthbar(1700/2,100/2,2200/2,200/2,percentage3,c_black,c_green,c_green,0,true,true)
 }
