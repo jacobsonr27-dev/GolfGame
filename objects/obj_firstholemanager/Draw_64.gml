@@ -100,6 +100,26 @@ if room == room_Hole4{
 		}
 	}
 }
+if room == room_Hole5{
+	if obj_firstholeball.x > 2590 and obj_firstholeball.x < 2780  and obj_firstholeball.y > 770 and obj_firstholeball.y < 860 or obj_firstholeball.x > 2625 and obj_firstholeball.x < 2750  and obj_firstholeball.y > 735 and obj_firstholeball.y < 895 or obj_firstholeball.x > 2655  and obj_firstholeball.x < 2785  and obj_firstholeball.y > 895 and obj_firstholeball.y < 930 or obj_firstholeball.x > 2780 and obj_firstholeball.x < 2815  and obj_firstholeball.y > 800  and obj_firstholeball.y < 895 {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(2540, 737, 324, 200);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 3225,1990);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
 if room == room_secondhole{
 	if obj_firstholeball.x > 1538 and obj_firstholeball.x < 1845 and obj_firstholeball.y > 552 and obj_firstholeball.y < 858 {
 		view_enabled = true;

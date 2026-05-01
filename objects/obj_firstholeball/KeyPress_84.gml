@@ -7,6 +7,7 @@ if global.inhole == true{
 			global.secondholestrokes = 0
 			global.thirdholestrokes = 0
 			global.fourthholestrokes = 0
+			global.fifthholestrokes = 0
 			
 		}
 		if room == room_Hole2 {
@@ -14,18 +15,25 @@ if global.inhole == true{
 			room_goto(room_scorecard)
 			global.thirdholestrokes = 0
 			global.fourthholestrokes = 0
+			global.fifthholestrokes = 0
 			
 		}
 		if room == room_Hole3 {
 			global.thirdholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
 			global.fourthholestrokes = 0
+			global.fifthholestrokes = 0
 			
 		}
 		if room == room_Hole4 {
 			global.fourthholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
+			global.fifthholestrokes = 0
 			
+		}
+		if room == room_Hole5{
+			global.fifthholestrokes = global.num_of_strokes
+			room_goto(room_scorecard)
 		}
 	}
 }

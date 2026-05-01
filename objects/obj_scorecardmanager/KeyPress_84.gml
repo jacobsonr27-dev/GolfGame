@@ -7,3 +7,6 @@ else if global.thirdholestrokes == 0 {
 else if global.fourthholestrokes == 0 {
 	room_goto(room_Hole4)
 }
+else if global.fifthholestrokes == 0 {
+	room_goto(room_Hole5)
+}

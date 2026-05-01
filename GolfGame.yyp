@@ -70,6 +70,7 @@
     {"id":{"name":"room_Hole1","path":"rooms/room_Hole1/room_Hole1.yy",},"order":8,},
     {"id":{"name":"spr_greenhole","path":"sprites/spr_greenhole/spr_greenhole.yy",},"order":18,},
     {"id":{"name":"spr_distance","path":"sprites/spr_distance/spr_distance.yy",},"order":5,},
+    {"id":{"name":"room_Hole5","path":"rooms/room_Hole5/room_Hole5.yy",},"order":12,},
     {"id":{"name":"room_profilescreen","path":"rooms/room_profilescreen/room_profilescreen.yy",},"order":2,},
     {"id":{"name":"obj_exitbutton","path":"objects/obj_exitbutton/obj_exitbutton.yy",},"order":18,},
     {"id":{"name":"room_practicegreen","path":"rooms/room_practicegreen/room_practicegreen.yy",},"order":3,},
@@ -105,6 +106,7 @@
     {"roomId":{"name":"room_Hole2","path":"rooms/room_Hole2/room_Hole2.yy",},},
     {"roomId":{"name":"room_Hole3","path":"rooms/room_Hole3/room_Hole3.yy",},},
     {"roomId":{"name":"room_Hole4","path":"rooms/room_Hole4/room_Hole4.yy",},},
+    {"roomId":{"name":"room_Hole5","path":"rooms/room_Hole5/room_Hole5.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
