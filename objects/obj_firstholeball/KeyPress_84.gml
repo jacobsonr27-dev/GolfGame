@@ -8,6 +8,10 @@ if global.inhole == true{
 			global.thirdholestrokes = 0
 			global.fourthholestrokes = 0
 			global.fifthholestrokes = 0
+			global.sixthholestrokes = 0
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
 			
 		}
 		if room == room_Hole2 {
@@ -16,6 +20,10 @@ if global.inhole == true{
 			global.thirdholestrokes = 0
 			global.fourthholestrokes = 0
 			global.fifthholestrokes = 0
+			global.sixthholestrokes = 0
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
 			
 		}
 		if room == room_Hole3 {
@@ -23,17 +31,36 @@ if global.inhole == true{
 			room_goto(room_scorecard)
 			global.fourthholestrokes = 0
 			global.fifthholestrokes = 0
+			global.sixthholestrokes = 0
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
 			
 		}
 		if room == room_Hole4 {
 			global.fourthholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
 			global.fifthholestrokes = 0
+			global.sixthholestrokes = 0
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
 			
 		}
 		if room == room_Hole5{
 			global.fifthholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
+			global.sixthholestrokes = 0
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
+		}
+		if room == room_Hole6{
+			global.sixthholestrokes = global.num_of_strokes
+			room_goto(room_scorecard)
+			global.seventhholestrokes = 0
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
 		}
 	}
 }

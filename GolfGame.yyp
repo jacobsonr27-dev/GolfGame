@@ -7,6 +7,7 @@
     {"id":{"name":"room_scorecard","path":"rooms/room_scorecard/room_scorecard.yy",},"order":7,},
     {"id":{"name":"obj_proflie","path":"objects/obj_proflie/obj_proflie.yy",},"order":15,},
     {"id":{"name":"room_drivingrange","path":"rooms/room_drivingrange/room_drivingrange.yy",},"order":1,},
+    {"id":{"name":"room_Hole6","path":"rooms/room_Hole6/room_Hole6.yy",},"order":13,},
     {"id":{"name":"spr_firstholebutton","path":"sprites/spr_firstholebutton/spr_firstholebutton.yy",},"order":19,},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},"order":10,},
     {"id":{"name":"obj_puttingball","path":"objects/obj_puttingball/obj_puttingball.yy",},"order":24,},
@@ -107,6 +108,7 @@
     {"roomId":{"name":"room_Hole3","path":"rooms/room_Hole3/room_Hole3.yy",},},
     {"roomId":{"name":"room_Hole4","path":"rooms/room_Hole4/room_Hole4.yy",},},
     {"roomId":{"name":"room_Hole5","path":"rooms/room_Hole5/room_Hole5.yy",},},
+    {"roomId":{"name":"room_Hole6","path":"rooms/room_Hole6/room_Hole6.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
