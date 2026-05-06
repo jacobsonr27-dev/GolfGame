@@ -124,7 +124,7 @@ if room == room_Hole6{
 	if obj_firstholeball.x > 1090 and obj_firstholeball.x < 1150  and obj_firstholeball.y > 385 and obj_firstholeball.y < 510 or obj_firstholeball.x > 1150 and obj_firstholeball.x < 1215  and obj_firstholeball.y > 320 and obj_firstholeball.y < 510 or obj_firstholeball.x > 1120  and obj_firstholeball.x < 1180  and obj_firstholeball.y > 350 and obj_firstholeball.y < 545 or obj_firstholeball.x > 1215 and obj_firstholeball.x < 1245  and obj_firstholeball.y > 350  and obj_firstholeball.y < 450 {
 		view_enabled = true;
 		view_set_visible(0, true);
-		var _camera = camera_create_view(1023, 318, 374, 230);
+		var _camera = camera_create_view(923, 318, 374, 230);
 		view_set_camera(0, _camera);
 		if global.step == 0{
 			global.green = true
@@ -134,6 +134,46 @@ if room == room_Hole6{
 		view_enabled = true;
 		view_set_visible(0, true);
 		var _camera = camera_create_view(0, 0, 1286,791);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
+if room == room_Hole7{
+	if obj_firstholeball.x > 2655 and obj_firstholeball.x < 2780  and obj_firstholeball.y > 895 and obj_firstholeball.y < 995 or obj_firstholeball.x > 2690 and obj_firstholeball.x < 2815  and obj_firstholeball.y > 830 and obj_firstholeball.y < 960 or obj_firstholeball.x > 2720  and obj_firstholeball.x < 2850  and obj_firstholeball.y > 770 and obj_firstholeball.y < 830 or obj_firstholeball.x > 2750 and obj_firstholeball.x < 2815  and obj_firstholeball.y > 735  and obj_firstholeball.y < 770 {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(2472, 734, 428, 264);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 2900,1790);
+		view_set_camera(0, _camera);
+		if global.puttingstep == 0 or global.puttingstep == 1{
+			global.green = false
+		}
+	}
+}
+if room == room_Hole8{
+	if obj_firstholeball.x > 3490 and obj_firstholeball.x < 3615  and obj_firstholeball.y > 1310 and obj_firstholeball.y < 1375 or obj_firstholeball.x > 3520 and obj_firstholeball.x < 3615  and obj_firstholeball.y > 1280 and obj_firstholeball.y < 1345 or obj_firstholeball.x > 3550  and obj_firstholeball.x < 3710  and obj_firstholeball.y > 1215 and obj_firstholeball.y < 1345 or obj_firstholeball.x > 3615 and obj_firstholeball.x < 3745  and obj_firstholeball.y > 1185  and obj_firstholeball.y < 1310 {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(3446, 1181, 341, 210);
+		view_set_camera(0, _camera);
+		if global.step == 0{
+			global.green = true
+		}
+	}
+	else {
+		view_enabled = true;
+		view_set_visible(0, true);
+		var _camera = camera_create_view(0, 0, 3839,2362);
 		view_set_camera(0, _camera);
 		if global.puttingstep == 0 or global.puttingstep == 1{
 			global.green = false

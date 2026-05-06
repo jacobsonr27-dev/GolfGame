@@ -1,6 +1,6 @@
 
 if global.inhole == true{	
-	if obj_firstholeball.speed == 0 {
+	if obj_firstholeball.speed == 0{
 		if room == room_Hole1 {
 			global.firstholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
@@ -62,5 +62,17 @@ if global.inhole == true{
 			global.eighthholestrokes = 0
 			global.ninthholestrokes = 0
 		}
+		if room == room_Hole7{
+			global.seventhholestrokes = global.num_of_strokes
+			room_goto(room_scorecard)
+			global.eighthholestrokes = 0
+			global.ninthholestrokes = 0
+		}
+		if room == room_Hole8{
+			global.eigthholestrokes = global.num_of_strokes
+			room_goto(room_scorecard)
+			global.ninthholestrokes = 0
+		}
+		global.inhole = false
 	}
 }
