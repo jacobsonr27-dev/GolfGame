@@ -41,6 +41,7 @@
     {"id":{"name":"obj_rangefinder","path":"objects/obj_rangefinder/obj_rangefinder.yy",},"order":34,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":8,},
+    {"id":{"name":"room_Hole9","path":"rooms/room_Hole9/room_Hole9.yy",},"order":16,},
     {"id":{"name":"obj_hole","path":"objects/obj_hole/obj_hole.yy",},"order":11,},
     {"id":{"name":"room_secondhole","path":"rooms/room_secondhole/room_secondhole.yy",},"order":5,},
     {"id":{"name":"obj_sand","path":"objects/obj_sand/obj_sand.yy",},"order":5,},
@@ -113,6 +114,7 @@
     {"roomId":{"name":"room_Hole6","path":"rooms/room_Hole6/room_Hole6.yy",},},
     {"roomId":{"name":"room_Hole7","path":"rooms/room_Hole7/room_Hole7.yy",},},
     {"roomId":{"name":"room_Hole8","path":"rooms/room_Hole8/room_Hole8.yy",},},
+    {"roomId":{"name":"room_Hole9","path":"rooms/room_Hole9/room_Hole9.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

@@ -69,9 +69,13 @@ if global.inhole == true{
 			global.ninthholestrokes = 0
 		}
 		if room == room_Hole8{
-			global.eigthholestrokes = global.num_of_strokes
+			global.eighthholestrokes = global.num_of_strokes
 			room_goto(room_scorecard)
 			global.ninthholestrokes = 0
+		}
+		if room == room_Hole9{
+			global.ninthholestrokes = global.num_of_strokes
+			room_goto(room_scorecard)
 		}
 		global.inhole = false
 	}
